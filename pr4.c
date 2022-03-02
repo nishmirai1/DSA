@@ -19,7 +19,7 @@ a[j+1]=temp;
 }
 }
 }
-printf("sorted element is\n");
+printf("Sorted element is\n");
 for(i=0;i<n;i++)
 printf("%d\t",a[i]);
 return 0;
