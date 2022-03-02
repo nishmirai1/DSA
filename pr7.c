@@ -3,7 +3,6 @@
 char infix[30],postfix[30];
 int top=-1;
 char stack[30];
-
 void push(char ch)
 {
 stack[++top]=ch;
@@ -24,7 +23,6 @@ if(x=='*'||x=='/')
 return 2;
 if(x=='^')
 return 3;
-
 return 0;
 }
 
