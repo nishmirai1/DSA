@@ -46,7 +46,6 @@ printf("\n stack menu");
 printf("\n1.push\n2.pop\n3.display\n4.exit");
 printf("\n Enter your choice");
 scanf("%d",&ch);
-
 switch(ch)
 {
 case 1:printf("Enter element to be inserted");
