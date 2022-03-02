@@ -23,7 +23,6 @@ min=j;
 temp=a[min];
 a[min]=a[j];
 a[i]=temp;
-
 }
 printf("selection sort is\n");
 for(i=0;i<n;i++)
