@@ -17,7 +17,7 @@ return ptr;
 }
 
 
-void insertbegin(int ele)
+void insertBegin(int ele)
 {
 lstptr new;
 new=getnode();
@@ -32,7 +32,7 @@ first=new;
 
 }
 
-void insertend(int ele)
+void insertEnd(int ele)
 {
 lstptr new,temp;
 new=getnode();
@@ -69,7 +69,7 @@ printf("%d\t",temp->data);
 
 }
 
-void deletebegin()
+void deleteBegin()
 {
 lstptr temp;
 if(first==NULL)
@@ -83,7 +83,7 @@ free(temp);
 }
 
 
-void deleteend()
+void deleteEnd()
 {
 lstptr temp,prev;
 temp=first;
@@ -140,10 +140,7 @@ return;
   prev->link=NULL;
   }
  free(temp);
- 
  }
-
-
 
 void main()
 {
@@ -157,20 +154,16 @@ switch(ch)
 {
 case 1 :printf("\nEnter the element:");
 	scanf("%d",&ele);
-	insertbegin(ele);
+	insertBegin(ele);
 	break;
-
 case 2: printf("\nEnter the element:");
 	scanf("%d",&ele);
-	insertend(ele);
+	insertEnd(ele);
 	break;
-
-case 3: deletebegin();
+case 3: deleteBegin();
 	break;
-case 4: deleteend();
+case 4: deleteEnd();
 	break;
-        
-
 case 5:  if(first==NULL)
 {
  printf(" List is empty");
@@ -183,6 +176,8 @@ case 5:  if(first==NULL)
 case 6: display();
 	break;
 }
+	printf("\n Do you want to continue...(0/1)");
+	scanf("%d",&op);
 
 }
 }
