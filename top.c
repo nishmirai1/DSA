@@ -10,6 +10,7 @@ if(visited[w]==0&&a[v][w]==1)
 dfs(w);
 top[k++]=v;
 }
+
 void main()
 {
 int i,j;
