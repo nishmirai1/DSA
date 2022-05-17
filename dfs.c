@@ -7,12 +7,11 @@ int w;
 count++;
 visited[v]=count;
 for(w=0;w<n;w++)
-
 if(visited[w]==0&&a[v][w]==1)
 dfs(w);
 printf("%d\t",v);
-
 }
+
 void main()
 {
 int i,j,v;
